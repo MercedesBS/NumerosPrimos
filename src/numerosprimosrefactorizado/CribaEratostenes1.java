@@ -73,3 +73,23 @@ public class CribaEratostenes1 {
         return primos;
     }
 }
+
+/*
+if (max < 2) return new int[0]; //Vector vacío.
+
+        esPrimo = new boolean[max+1];
+        boolean[] esPrimo = new boolean[max + 1];
+        iniciarCriba();
+        cribar();
+        int[] primos = rellenarPrimos();
+        return primos;
+        }
+
+        
+    public static void iniciarCriba() {
+    int i;    
+    for (i=0; i<max; i++) {
+    esPrimo[i] = true; 
+    }
+    }
+*/
