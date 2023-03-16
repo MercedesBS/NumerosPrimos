@@ -18,55 +18,29 @@ public class NumerosPrimosTest {
 
     @Test
     public void generarPrimos1() {
+        int[] esperado = new int[0];
         int[] centArray = CribaEratostenes.generarPrimos(0);
-        System.out.println("Los primos de max 0 son los siguientes: ");
-        if (centArray.length > 0) {
-            for (int i = 0; i < centArray.length; i++) {
-                System.out.println(centArray[i]);
-            }
-        } else {
-            System.out.println("No existen números primos de 0.");
+        assertArrayEquals(esperado, centArray);
         }
-
-    }
 
     @Test
     public void generarPrimos2() {
+        int[] esperado = new int[]{2};
         int[] centArray = CribaEratostenes.generarPrimos(2);
-        if (centArray.length > 0) {
-            System.out.println("Los primos de max 2 son los siguientes: ");
-            for (int i = 0; i < centArray.length; i++) {
-                System.out.println(centArray[i]);
-            }
-        } else {
-            System.out.println("No existen números primos de 2.");
+        assertArrayEquals(esperado, centArray);
         }
-    }
 
     @Test
     public void generarPrimos3() {
+        int[] esperado = new int[]{2,3};
         int[] centArray = CribaEratostenes.generarPrimos(3);
-        if (centArray.length > 0) {
-            System.out.println("Los primos de max 3 son los siguientes: ");
-            for (int i = 0; i < centArray.length; i++) {
-                System.out.println(centArray[i]);
-            }
-        } else {
-            System.out.println("No existen números primos de 3.");
+        assertArrayEquals(esperado, centArray);
         }
-    }
 
     @Test
     public void generarPrimos4() {
+        int[] esperado = new int[]{2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97};
         int[] centArray = CribaEratostenes.generarPrimos(100);
-        if (centArray.length > 0) {
-            System.out.println("Los primos de max 100 son los siguientes: ");
-            for (int i = 0; i < centArray.length; i++) {
-                System.out.println(centArray[i]);
-            }
-        } else {
-            System.out.println("No existen números primos de 100.");
+        assertArrayEquals(esperado, centArray);
         }
-    }
-
 }
